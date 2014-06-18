@@ -24,4 +24,4 @@ test('reformats variable declarations', function(t) {
   })
 
   t.equal(ast.toString(), expected)
-}
+})
