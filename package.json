@@ -1,7 +1,7 @@
 {
-  "name": "formatter",
+  "name": "rocambole-commafirst",
   "version": "0.0.0",
-  "description": "Format your JS our way",
+  "description": "Make Rocambole nodes commafirst",
   "main": "index.js",
   "author": "Andrew Winterman <andywinterman@gmail.com>",
   "license": "MIT",
@@ -14,5 +14,23 @@
   },
   "devDependencies": {
     "tape": "^2.13.3"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "node test/*.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AWinterman/rocambole-commafirst.git"
+  },
+  "keywords": [
+    "rocambole",
+    "commafirst"
+  ],
+  "bugs": {
+    "url": "https://github.com/AWinterman/rocambole-commafirst/issues"
+  },
+  "homepage": "https://github.com/AWinterman/rocambole-commafirst"
 }

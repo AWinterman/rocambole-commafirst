@@ -39,12 +39,10 @@ test('reformats variable declarations', function(t) {
 
     rocambole.moonwalk(ast, commafirst)
 
-    console.error(ast.toString())
-//
-//     t.equal(
-//         ast.toString()
-//       , fs.readFileSync('./test/expected-variables.js').toString()
-//     )
+    t.equal(
+        ast.toString()
+      , fs.readFileSync('./test/expected-variables.js').toString()
+    )
 
     t.end()
   }
