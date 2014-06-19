@@ -10,16 +10,20 @@
     "rocambole": "^0.3.3",
     "falafel": "^0.3.1",
     "mustache": "^0.8.2",
-    "fcomp": "^1.1.0"
+    "fcomp": "^1.1.0",
+    "esprima": "^1.2.2"
   },
   "devDependencies": {
-    "tape": "^2.13.3"
+    "tape": "^2.13.3",
+    "diff": "^1.0.8",
+    "bash-color": "0.0.3",
+    "faucet": "0.0.1"
   },
   "directories": {
     "test": "test"
   },
   "scripts": {
-    "test": "node test/*.test.js"
+    "test": "node test/*.test.js" 
   },
   "repository": {
     "type": "git",

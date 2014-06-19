@@ -37,4 +37,4 @@ var obj = {
     , "expect.js": "0.2"
     , "istanbul": "~0.1.23"
   }
- }
+}
