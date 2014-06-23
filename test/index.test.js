@@ -29,7 +29,7 @@ test('reformats objects', function(t) {
 
 
 test('reformats variable declarations', function(t) {
-  fs.readFile('./test/some-vars.js', onfile)
+  fs.readFile('./test/a-bunch-of-vars.js', onfile)
 
   function onfile(err, data) {
     if(err) {
