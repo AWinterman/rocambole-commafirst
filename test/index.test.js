@@ -1,6 +1,4 @@
 var fs = require('fs')
-  , diff = require('diff')
-  , color = require('bash-color')
 
 var rocambole = require('rocambole')
   , tk = require('rocambole-token')
@@ -18,7 +16,7 @@ test('reformats objects', function(t) {
 
     var ast = rocambole.parse(data.toString())
 
-    rocambole.moonwalk(ast, commafirst)
+    rocambole.recursive(ast, commafirst)
 
     t.equal(
         ast.toString()
@@ -29,8 +27,9 @@ test('reformats objects', function(t) {
   }
 })
 
+
 test('reformats variable declarations', function(t) {
-  fs.readFile('./test/a-bunch-of-vars.js', onfile)
+  fs.readFile('./test/some-vars.js', onfile)
 
   function onfile(err, data) {
     if(err) {
@@ -40,6 +39,7 @@ test('reformats variable declarations', function(t) {
     var ast = rocambole.parse(data.toString())
 
     rocambole.moonwalk(ast, commafirst)
+
 
     t.equal(
         ast.toString()
@@ -62,7 +62,10 @@ test('reformats function args', function(t) {
 
     rocambole.moonwalk(ast, commafirst)
 
-    t.equal(fs.readFileSync('./test/expected-functions.js').toString(), ast.toString())
+    t.equal(
+        ast.toString()
+      , fs.readFileSync('./test/expected-functions.js').toString()
+    )
 
     t.end()
   }

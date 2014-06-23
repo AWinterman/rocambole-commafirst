@@ -33,8 +33,9 @@ var obj = {
       "esprima": "~1.0"
   }
   , "devDependencies": {
-      "mocha": "~1.7"
+      1: 'wut'
+    , mocha: "~1.7"
     , "expect.js": "0.2"
-    , "istanbul": "~0.1.23"
+    , istanbul: "~0.1.23"
   }
 }

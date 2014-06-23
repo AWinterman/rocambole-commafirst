@@ -23,7 +23,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "./node_modules/.bin/tape ./test/*.test.js | ./node_modules/.bin/faucet"
+    "test": "./node_modules/.bin/tape ./test/*.test.js"
   },
   "repository": {
     "type": "git",
