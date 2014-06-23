@@ -1,6 +1,6 @@
 {
   "name": "rocambole-commafirst",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Make Rocambole nodes commafirst",
   "main": "index.js",
   "author": "Andrew Winterman <andywinterman@gmail.com>",
